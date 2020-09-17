@@ -25,14 +25,11 @@
 </head>
 
 <!--body-->
-<body onresize="windowSize()">
     
     <!--header below-->
 
     <div id="headerWrapper">
         <header class="clearfix">
-            <!--if there's a logo it goes here
-            <img src="images/fruit-stand-logo.png" alt="Fruit Stand Logo" class="logo">-->
 
             <!-- <h1>Joe's Bed and Breakfast</h1>
             <h2>Providing Good Nights and Good Mornings</h2> -->
@@ -48,28 +45,20 @@
 
     <div id="mainWrapper">
         <main>
-        <h1>Inspector Clouseau</h1>    
+        <h1>High/Low Guessing Game</h1>    
         <h2>This webpage demonstrates</h1>
         <ul>
-            <li>Using JavaScript to dynamically create the header h1 and h2 elements and to insert text into those elements</li>
-            <li>Displaying the window width, height, and offset using JavaScript</li>
-            <!-- <li>Displaying the window offset, also using JavaScript</li> -->
-            <li>Using JavaScript event listeners to alter the text upon window resize</li>
-            <li>Using JavaScript to display the page URL, title, and date of last update</li>
+            <li>Use of the math.random and math.floor methods</li>
+            <li>Use of the onclick event handler</li>
+            <li>Understanding the JavaScript switch statement</li>
+            <li>Understanding of nodes and appendChild</li>
             <li>Using a GitHub repo and Netlify</li>
         </ul>
 
-        <h2>Window Properties</h2>
-        <p id="windowSize"></p>
-        <p id="windowOffset"></p>
-        <p id="documentURL"></p>
-
-        <h2>Document Properties</h2>
-        <p id="document"></p>
-        <p id="documentTitle"></p>
-        <p id="updateTime"></p>
-        </main>
-    </div>
+        <div id="gameArea">
+            <input id="guess" type="number" placeholder="000">
+            <button onclick="checkGuess">Guess</button>
+        </div>
 
     <!--footer below-->
 
